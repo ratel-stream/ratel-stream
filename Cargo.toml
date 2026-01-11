@@ -8,17 +8,22 @@ bitflags = "1.3.2"
 bon = "3.8.1"
 bytes = "1.11.0"
 chrono = { version = "0.4.42", default-features = false, features = ["std", "clock"] }
+config = { version = "0.15.19", features = ["yaml"] }
 dotenv = "0.15.0"
 env_logger = "0.8.4"
 futures = "0.3.31"
+iso8601-duration = { version = "0.2.0", features = ["serde"] }
 itertools = "0.14.0"
-mimalloc = "0.1.46"
+mimalloc = "0.1.48"
 monoio = "0.2.4"
 parking_lot = "0.12.5"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = { version = "1.0.149" }
 thiserror = "2.0.17"
 thousands = "0.2.0"
 tracing = { version = "0.1.44", features = ["attributes"] }
 tracing-subscriber = { version = "0.3.22", features = ["env-filter", "serde"] }
+validator = { version = "0.20.0", features = ["derive"] }
 zerocopy = { version = "0.8.31", features = ["std", "derive", "simd"] }
 
 [profile.release]
