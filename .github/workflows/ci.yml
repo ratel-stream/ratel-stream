@@ -23,9 +23,9 @@ jobs:
   ci:
     name: Build, Lint & Test
     runs-on: ubuntu-latest
-    if: |
-      github.event_name == 'pull_request' ||
-      (github.event_name == 'workflow_dispatch' && github.ref != 'refs/heads/main')
+#    if: |
+#      github.event_name == 'pull_request' ||
+#      (github.event_name == 'workflow_dispatch' && github.ref != 'refs/heads/main')
 
     steps:
       - name: Checkout code
